@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Terms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="c" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Point" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="VectorTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="Vector" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+        <org.eventb.core.poPredicate name="VectorTermt" org.eventb.core.predicate="Point⊆Terms" org.eventb.core.source="/BDIAgents/TermsContext.buc|org.eventb.core.contextFile#TermsContext|org.eventb.core.axiom#2"/>
+        <org.eventb.core.poPredicate name="VectorTermu" org.eventb.core.predicate="VectorTerms⊆Terms" org.eventb.core.source="/BDIAgents/TermsContext.buc|org.eventb.core.contextFile#TermsContext|org.eventb.core.axiom#7"/>
+        <org.eventb.core.poPredicate name="VectorTermv" org.eventb.core.predicate="Vector∈Point × Point ↣ VectorTerms" org.eventb.core.source="/BDIAgents/TermsContext.buc|org.eventb.core.contextFile#TermsContext|org.eventb.core.axiom#1"/>
+        <org.eventb.core.poPredicate name="VectorTermw" org.eventb.core.predicate="partition(Terms,Point,VectorTerms)" org.eventb.core.source="/BDIAgents/TermsContext.buc|org.eventb.core.contextFile#TermsContext|org.eventb.core.axiom#5"/>
+        <org.eventb.core.poPredicate name="VectorTermx" org.eventb.core.predicate="partition(Point,{a},{b},{c})" org.eventb.core.source="/BDIAgents/TermsContext.buc|org.eventb.core.contextFile#TermsContext|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poIdentifier name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="addition_sets" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(Belief_predicate_symbols×Terms))"/>
+        <org.eventb.core.poIdentifier name="preconditions" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(Belief_predicate_symbols×Terms))"/>
+        <org.eventb.core.poIdentifier name="deletion_sets" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(Belief_predicate_symbols×Terms))"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolt" org.eventb.core.predicate="preconditions∈Action_predicate_symbols × Terms ↔ Belief_predicate_symbols × Terms" org.eventb.core.source="/BDIAgents/BDISyntaxContext.buc|org.eventb.core.contextFile#BDISyntaxContext|org.eventb.core.axiom#axm2"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolu" org.eventb.core.predicate="deletion_sets∈Action_predicate_symbols × Terms ↔ Belief_predicate_symbols × Terms" org.eventb.core.source="/BDIAgents/BDISyntaxContext.buc|org.eventb.core.contextFile#BDISyntaxContext|org.eventb.core.axiom#axm3"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolv" org.eventb.core.predicate="addition_sets∈Action_predicate_symbols × Terms ↔ Belief_predicate_symbols × Terms" org.eventb.core.source="/BDIAgents/BDISyntaxContext.buc|org.eventb.core.contextFile#BDISyntaxContext|org.eventb.core.axiom#axm4"/>
+        <org.eventb.core.poIdentifier name="smile_at" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="cried_at" org.eventb.core.type="Belief_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="cry_at" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="next" org.eventb.core.type="Belief_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="smiled_at" org.eventb.core.type="Belief_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="travel" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="play_at" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="at" org.eventb.core.type="Belief_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="Initial_external_event_set" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms)"/>
+        <org.eventb.core.poIdentifier name="arrive_at" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="Initial_belief_base" org.eventb.core.type="ℙ(Belief_predicate_symbols×Terms)"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_seu" org.eventb.core.predicate="partition(Belief_predicate_symbols,{at},{smiled_at},{cried_at},{next})" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#E"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_sev" org.eventb.core.predicate="partition(Event_predicate_symbols,{arrive_at},{play_at})" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#F"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_sew" org.eventb.core.predicate="partition(Action_predicate_symbols,{travel},{smile_at},{cry_at})" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#x"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_sex" org.eventb.core.predicate="preconditions={terms1⦂Terms,terms2⦂Terms·terms1∈Point∧terms2∈Point ∣ travel ↦ Vector(terms1 ↦ terms2) ↦ (at ↦ terms1)}∪{terms⦂Terms·terms∈Point ∣ smile_at ↦ terms ↦ (at ↦ terms)}∪{terms⦂Terms·terms∈Point ∣ cry_at ↦ terms ↦ (at ↦ terms)}" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#'H"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_sey" org.eventb.core.predicate="addition_sets={terms⦂Terms,terms1⦂Terms,terms2⦂Terms·terms1∈Point∧terms2∈Point∧terms=Vector(terms1 ↦ terms2) ∣ travel ↦ terms ↦ (at ↦ terms2)}∪{terms⦂Terms·terms∈Point ∣ cry_at ↦ terms ↦ (cried_at ↦ terms)}∪{terms⦂Terms·terms∈Point ∣ smile_at ↦ terms ↦ (smiled_at ↦ terms)}" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#'I"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_sez" org.eventb.core.predicate="deletion_sets={terms1⦂Terms,terms2⦂Terms·terms1∈Point∧terms2∈Point ∣ travel ↦ Vector(terms1 ↦ terms2) ↦ (at ↦ terms1)}" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#'X"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_se{" org.eventb.core.predicate="Initial_belief_base∈ℙ(Belief_predicate_symbols × Terms)" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#axm8"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_se|" org.eventb.core.predicate="Initial_belief_base={at ↦ a,next ↦ Vector(a ↦ b),next ↦ Vector(b ↦ c),next ↦ Vector(a ↦ c)}" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#axm="/>
+        <org.eventb.core.poPredicate name="Initial_external_event_se}" org.eventb.core.predicate="Initial_external_event_set∈ℙ(Event_predicate_symbols × Terms)" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#axm:"/>
+        <org.eventb.core.poPredicate name="Initial_external_event_se~" org.eventb.core.predicate="Initial_external_event_set={arrive_at ↦ c}" org.eventb.core.source="/BDIAgents/BDIPrograms.buc|org.eventb.core.contextFile#BDIPrograms|org.eventb.core.axiom#axm&gt;"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="belief_base" org.eventb.core.type="ℙ(Belief_predicate_symbols×Terms)"/>
+        <org.eventb.core.poIdentifier name="external_events" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms)"/>
+        <org.eventb.core.poIdentifier name="counter" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#EVTALLHYPBDISyntaxContexx"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.invariant#evt3"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.event#'"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.invariant#evt3"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContexx" org.eventb.core.parentSet="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="external_events'" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms)"/>
+        <org.eventb.core.poIdentifier name="counter'" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poIdentifier name="belief_base'" org.eventb.core.type="ℙ(Belief_predicate_symbols×Terms)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContexx" org.eventb.core.parentSet="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContexx" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poSequent name="AddressExternalEvent/inv4/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#EVTALLHYPBDISyntaxContexy"/>
+        <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="counter+1∈ℕ" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.invariant#evt3"/>
+        <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.event#evt1"/>
+        <org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.invariant#evt3"/>
+        <org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poSequent#AddressExternalEvent\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+        <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD2"/>
+    </org.eventb.core.poSequent>
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContexy" org.eventb.core.parentSet="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="external_events'" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms)"/>
+        <org.eventb.core.poIdentifier name="terms" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="event" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="counter'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContexy" org.eventb.core.parentSet="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContexy" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="event ↦ terms∈external_events" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.event#evt1|org.eventb.core.guard#'"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgents/RuleAddressExternalEvent.bpo|org.eventb.core.poFile#RuleAddressExternalEvent|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="belief_base∈ℙ(Belief_predicate_symbols × Terms)" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.invariant#,"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="external_events∈ℙ(Event_predicate_symbols × Terms)" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.invariant#."/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="counter∈ℕ" org.eventb.core.source="/BDIAgents/RuleAddressExternalEvent.bum|org.eventb.core.machineFile#RuleAddressExternalEvent|org.eventb.core.invariant#evt3"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

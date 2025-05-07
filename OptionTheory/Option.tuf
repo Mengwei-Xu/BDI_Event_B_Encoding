@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.theory.core.theoryRoot org.eventb.core.configuration="org.eventb.theory.core.thy">
+    <org.eventb.theory.core.typeParameter name="'" org.eventb.core.identifier="A"/>
+    <org.eventb.theory.core.datatypeDefinition name="(" org.eventb.core.identifier="Option">
+        <org.eventb.theory.core.typeArgument name="'" org.eventb.theory.core.givenType="A"/>
+        <org.eventb.theory.core.datatypeConstructor name="(" org.eventb.core.identifier="None"/>
+        <org.eventb.theory.core.datatypeConstructor name=")" org.eventb.core.identifier="Some">
+            <org.eventb.theory.core.constructorArgument name="'" org.eventb.core.identifier="element" org.eventb.theory.core.type="A"/>
+        </org.eventb.theory.core.datatypeConstructor>
+    </org.eventb.theory.core.datatypeDefinition>
+    <org.eventb.theory.core.newOperatorDefinition name=")" org.eventb.core.label="isSome" org.eventb.theory.core.associative="false" org.eventb.theory.core.commutative="false" org.eventb.theory.core.formulaType="false" org.eventb.theory.core.notationType="PREFIX">
+        <org.eventb.theory.core.operatorArgument name="'" org.eventb.core.expression="Option(A)" org.eventb.core.identifier="option"/>
+        <org.eventb.theory.core.recursiveOperatorDefinition name="(" org.eventb.theory.core.inductiveArgument="option">
+            <org.eventb.theory.core.recursiveDefinitionCase name="'" org.eventb.core.expression="None" org.eventb.theory.core.formula="⊥ "/>
+            <org.eventb.theory.core.recursiveDefinitionCase name="(" org.eventb.core.expression="Some(a)" org.eventb.theory.core.formula="⊤ "/>
+        </org.eventb.theory.core.recursiveOperatorDefinition>
+    </org.eventb.theory.core.newOperatorDefinition>
+</org.eventb.theory.core.theoryRoot>
