@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="4">
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
         <org.eventb.core.poIdentifier name="Terms" org.eventb.core.type="ℙ(Terms)"/>
         <org.eventb.core.poIdentifier name="a" org.eventb.core.type="Terms"/>
@@ -66,7 +66,7 @@
         <org.eventb.core.poIdentifier name="belief_base'" org.eventb.core.type="ℙ(Belief_predicate_symbols×Terms)"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContexx" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContexx" org.eventb.core.poStamp="1"/>
-    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContexy" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContexy" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="external_events'" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms)"/>
         <org.eventb.core.poIdentifier name="terms" org.eventb.core.type="Terms"/>
         <org.eventb.core.poIdentifier name="intentions'" org.eventb.core.type="ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))"/>
@@ -90,7 +90,7 @@
         <org.eventb.core.poIdentifier name="event" org.eventb.core.type="Event_predicate_symbols"/>
         <org.eventb.core.poIdentifier name="nextP_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContexz)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContexz" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContexz)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContexz" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="intention∈intentions" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#6|org.eventb.core.guard#("/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nextP ↦ nextP_location∈next_programs_to_progress(intention,belief_base,Root ⦂ ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#6|org.eventb.core.guard#6"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="isBasicP_event_intention(nextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#6|org.eventb.core.guard#4"/>
@@ -129,15 +129,15 @@
         <org.eventb.core.poIdentifier name="applicable_plan_body" org.eventb.core.type="UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="nextP_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex{)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContex{" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex{)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContex{" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="intention∈intentions" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt1|org.eventb.core.guard#0"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nextP ↦ nextP_location∈next_programs_to_progress(intention,belief_base,Root ⦂ ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt1|org.eventb.core.guard#8"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="isRelevant_plans(nextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt1|org.eventb.core.guard#?"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex{*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex{)" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex{*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex{)" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="triggering_event(nextP)=event ↦ terms" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt1|org.eventb.core.guard#D"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex{," org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex{*" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex{," org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex{*" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="context ↦ applicable_plan_body∈set_of_guarded_plan_bodies(nextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt1|org.eventb.core.guard#;"/>
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="context⊆belief_base" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt1|org.eventb.core.guard#G"/>
     </org.eventb.core.poPredicateSet>
@@ -150,7 +150,7 @@
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#1|org.eventb.core.guard#&gt;"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex\|)"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContex|" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContex|" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="terms" org.eventb.core.type="Terms"/>
         <org.eventb.core.poIdentifier name="intention" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intentions'" org.eventb.core.type="ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))"/>
@@ -160,7 +160,7 @@
         <org.eventb.core.poIdentifier name="action" org.eventb.core.type="Action_predicate_symbols"/>
         <org.eventb.core.poIdentifier name="nextP_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex|)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContex\|" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex|)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContex\|" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="intention∈intentions" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#1|org.eventb.core.guard#6"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nextP ↦ nextP_location∈next_programs_to_progress(intention,belief_base,Root ⦂ ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#1|org.eventb.core.guard#+"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="isBasicP_action_intention(nextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#1|org.eventb.core.guard#C"/>
@@ -188,20 +188,20 @@
         <org.eventb.core.poIdentifier name="intention" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intentions'" org.eventb.core.type="ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))"/>
         <org.eventb.core.poIdentifier name="nextP" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
-        <org.eventb.core.poIdentifier name="newnextP" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
-        <org.eventb.core.poIdentifier name="newnextP_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
+        <org.eventb.core.poIdentifier name="try_current_with_backups_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
+        <org.eventb.core.poIdentifier name="backups" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="nextP_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex}(" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContex}" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="intention∈intentions" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt3|org.eventb.core.guard#+"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nextP ↦ nextP_location∈next_programs_to_progress(intention,belief_base,Root ⦂ ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt3|org.eventb.core.guard#4"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex}*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex}(" org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex}*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex}(" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="(isBasicP_action_intention(nextP)∧¬preconditions[{basic_program_action_intention(nextP)}]⊆belief_base)∨(isBasicP_event_intention(nextP)∧plan_rules[{basic_program_event_intention(nextP)}]=(∅ ⦂ ℙ(ℙ(Belief_predicate_symbols×Terms)×UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))))∨(isRelevant_plans(nextP)∧(∀context⦂ℙ(Belief_predicate_symbols×Terms)·context ↦ plan_body∈set_of_guarded_plan_bodies(nextP)⇒context⊈belief_base))∨isFalse(nextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt3|org.eventb.core.guard#7"/>
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="isSome(get_backups_for_current_plan(nextP_location))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt3|org.eventb.core.guard#8"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContex}" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex}*" org.eventb.core.poStamp="3">
-        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="newnextP ↦ newnextP_location=element(get_backups_for_current_plan(nextP_location))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt3|org.eventb.core.guard#B"/>
+        <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="backups ↦ try_current_with_backups_location=element(get_backups_for_current_plan(nextP_location))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt3|org.eventb.core.guard#B"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poSequent name="DeclarativeGoalSuccess/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex~)"/>
@@ -209,14 +209,14 @@
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt4|org.eventb.core.guard#-"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContex~)"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContex~" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContex~" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="intention" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intentions'" org.eventb.core.type="ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))"/>
         <org.eventb.core.poIdentifier name="nextP" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="newnextP" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="nextP_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex~)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContex~" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContex~)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContex~" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="intention∈intentions" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt4|org.eventb.core.guard#'"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nextP ↦ nextP_location∈next_programs_to_progress(intention,belief_base,Root ⦂ ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt4|org.eventb.core.guard#+"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="isDeclarative_goal_intention(nextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt4|org.eventb.core.guard#,"/>
@@ -232,14 +232,14 @@
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt5|org.eventb.core.guard#-"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey')"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContey'" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContey'" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="intention" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intentions'" org.eventb.core.type="ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))"/>
         <org.eventb.core.poIdentifier name="nextP" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="newnextP" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="nextP_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey')" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContey'" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey')" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContey'" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="intention∈intentions" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt5|org.eventb.core.guard#*"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nextP ↦ nextP_location∈next_programs_to_progress(intention,belief_base,Root ⦂ ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt5|org.eventb.core.guard#+"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="isDeclarative_goal_intention(nextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt5|org.eventb.core.guard#,"/>
@@ -273,43 +273,43 @@
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt6|org.eventb.core.guard#1"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey(,"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContey(" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContey(" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="intention" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intentions'" org.eventb.core.type="ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))"/>
         <org.eventb.core.poIdentifier name="nextP" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="newnextP" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="nextP_location" org.eventb.core.type="ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey()" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContey(" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey()" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContey(" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="intention∈intentions" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt6|org.eventb.core.guard#,"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="nextP ↦ nextP_location∈next_programs_to_progress(intention,belief_base,Root ⦂ ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt6|org.eventb.core.guard#-"/>
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="isDeclarative_goal_intention(nextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt6|org.eventb.core.guard#."/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey(*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey()" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey(*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey()" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="¬isTry_current_with_backups(procedural_program(nextP))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt6|org.eventb.core.guard#\/"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey(+" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey(*" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey(+" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey(*" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="success_condition(nextP)⊈belief_base" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt6|org.eventb.core.guard#3"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey(," org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey(+" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey(," org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey(+" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="failure_condition(nextP)⊈belief_base" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt6|org.eventb.core.guard#4"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContey(" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey(," org.eventb.core.poStamp="1">
         <org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="newnextP=Declarative_goal_intention(success_condition(nextP),Try_current_with_backups(procedural_program(nextP),procedural_program(nextP)),failure_condition(nextP))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt6|org.eventb.core.guard#1"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="DeclarativeGoalPersistentFailureRecovery/grd8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="4">
+    <org.eventb.core.poSequent name="DeclarativeGoalPersistentFailureRecovery/grd8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey))"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃element0⦂IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)×ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)·get_backups_for_current_plan(nextP_location)=Some(element0)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt=|org.eventb.core.guard#9"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt=|org.eventb.core.guard#9"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey))"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="DeclarativeGoalPersistentFailureRecovery/grd5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="4">
+    <org.eventb.core.poSequent name="DeclarativeGoalPersistentFailureRecovery/grd5/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="2">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey)+"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="isRelevant_plans(nextP)⇒(∃triggering_event0⦂Event_predicate_symbols×Terms,set_of_guarded_plan_bodies1⦂ℙ(ℙ(Belief_predicate_symbols×Terms)×UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))·nextP=Relevant_plans(triggering_event0,set_of_guarded_plan_bodies1))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt=|org.eventb.core.guard#\/"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt=|org.eventb.core.guard#\/"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey)+"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContey)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="4">
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContey)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="2">
         <org.eventb.core.poIdentifier name="plan_body" org.eventb.core.type="UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intention" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intentions'" org.eventb.core.type="ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))"/>
@@ -327,7 +327,7 @@
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="newnextP ↦ newnextP_location=element(get_backups_for_current_plan(nextP_location))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt=|org.eventb.core.guard#9"/>
         <org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="¬isRelevant_plans(newnextP)∧isBasicP_event_intention(newnextP)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt=|org.eventb.core.guard#."/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContey)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey)+" org.eventb.core.poStamp="4">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContey)" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey)+" org.eventb.core.poStamp="2">
         <org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="isRelevant_plans(nextP)∧(∀context⦂ℙ(Belief_predicate_symbols×Terms)·context ↦ plan_body∈set_of_guarded_plan_bodies(nextP)⇒context⊈belief_base)" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt=|org.eventb.core.guard#\/"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poSequent name="Aupdate/grd2/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="1">
@@ -336,15 +336,15 @@
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt;|org.eventb.core.guard#*"/>
         <org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey*'"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContey*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTIDENTBDISyntaxContey*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="plan_body" org.eventb.core.type="UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intention" org.eventb.core.type="IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.poIdentifier name="intentions'" org.eventb.core.type="ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey*'" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContey*" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTHYPBDISyntaxContey*'" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTIDENTBDISyntaxContey*" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="intention∈intentions" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt;|org.eventb.core.guard#)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContey*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey*'" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="EVTALLHYPBDISyntaxContey*" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#EVTHYPBDISyntaxContey*'" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="intention=(Nil ⦂ IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))∨(isRelevant_plans(intention)∧(∀context⦂ℙ(Belief_predicate_symbols×Terms)·context ↦ plan_body∈set_of_guarded_plan_bodies(intention)⇒context⊈belief_base))" org.eventb.core.source="/BDIAgents/BDISemantics.bum|org.eventb.core.machineFile#BDISemantics|org.eventb.core.event#evt;|org.eventb.core.guard#*"/>
     </org.eventb.core.poPredicateSet>
     <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgents/BDISemantics.bpo|org.eventb.core.poFile#BDISemantics|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
