@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+    <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="Terms"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="(" org.eventb.core.identifier="PointTerms"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=")" org.eventb.core.identifier="TwoAryVectorTerms"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="*" org.eventb.core.identifier="ThreeAryVectorTerms"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="+" org.eventb.core.identifier="TwoAryVectorFunction"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="," org.eventb.core.identifier="ThreeAryVectorFunction"/>
+    <org.eventb.core.axiom name="-" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Terms, PointTerms, TwoAryVectorTerms, ThreeAryVectorTerms)"/>
+    <org.eventb.core.axiom name="." org.eventb.core.label="axm2" org.eventb.core.predicate="TwoAryVectorFunction ∈ PointTerms × PointTerms ↣ TwoAryVectorTerms"/>
+    <org.eventb.core.axiom name="/" org.eventb.core.label="axm3" org.eventb.core.predicate="ThreeAryVectorFunction ∈ PointTerms × PointTerms × PointTerms ↣ ThreeAryVectorTerms"/>
+</org.eventb.core.contextFile>
