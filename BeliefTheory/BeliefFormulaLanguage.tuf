@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.theory.core.theoryRoot org.eventb.core.configuration="org.eventb.theory.core.thy">
+    <org.eventb.theory.core.typeParameter name="'" org.eventb.core.identifier="Belief_predicate_symbols"/>
+    <org.eventb.theory.core.typeParameter name="(" org.eventb.core.identifier="Terms"/>
+    <org.eventb.theory.core.datatypeDefinition name=")" org.eventb.core.identifier="BeliefFormula">
+        <org.eventb.theory.core.typeArgument name="'" org.eventb.theory.core.givenType="Belief_predicate_symbols"/>
+        <org.eventb.theory.core.typeArgument name="(" org.eventb.theory.core.givenType="Terms"/>
+        <org.eventb.theory.core.datatypeConstructor name=")" org.eventb.core.identifier="Belief_atom">
+            <org.eventb.theory.core.constructorArgument name="'" org.eventb.core.identifier="atom" org.eventb.theory.core.type="Belief_predicate_symbols × Terms"/>
+        </org.eventb.theory.core.datatypeConstructor>
+        <org.eventb.theory.core.datatypeConstructor name="*" org.eventb.core.identifier="Conjunctive_formula">
+            <org.eventb.theory.core.constructorArgument name="'" org.eventb.core.identifier="conjunctive_left_formula" org.eventb.theory.core.type="BeliefFormula(Belief_predicate_symbols, Terms)"/>
+            <org.eventb.theory.core.constructorArgument name="(" org.eventb.core.identifier="conjunctive_right_formula" org.eventb.theory.core.type="BeliefFormula(Belief_predicate_symbols, Terms)"/>
+        </org.eventb.theory.core.datatypeConstructor>
+        <org.eventb.theory.core.datatypeConstructor name="+" org.eventb.core.identifier="Disjunctive_formula">
+            <org.eventb.theory.core.constructorArgument name="'" org.eventb.core.identifier="disjunctive_left_formula" org.eventb.theory.core.type="BeliefFormula(Belief_predicate_symbols, Terms)"/>
+            <org.eventb.theory.core.constructorArgument name="(" org.eventb.core.identifier="disjunctive_right_formula" org.eventb.theory.core.type="BeliefFormula(Belief_predicate_symbols, Terms)"/>
+        </org.eventb.theory.core.datatypeConstructor>
+        <org.eventb.theory.core.datatypeConstructor name="," org.eventb.core.identifier="Negated_formula">
+            <org.eventb.theory.core.constructorArgument name="'" org.eventb.core.identifier="formula" org.eventb.theory.core.type="BeliefFormula(Belief_predicate_symbols, Terms)"/>
+        </org.eventb.theory.core.datatypeConstructor>
+        <org.eventb.theory.core.datatypeConstructor name="-" org.eventb.core.identifier="TruthFormula"/>
+        <org.eventb.theory.core.datatypeConstructor name="." org.eventb.core.identifier="FalseFormula"/>
+    </org.eventb.theory.core.datatypeDefinition>
+    <org.eventb.theory.core.newOperatorDefinition name="*" org.eventb.core.label="belief_entail" org.eventb.theory.core.associative="false" org.eventb.theory.core.commutative="false" org.eventb.theory.core.formulaType="false" org.eventb.theory.core.notationType="PREFIX">
+        <org.eventb.theory.core.operatorArgument name="'" org.eventb.core.expression="ℙ(Belief_predicate_symbols × Terms)" org.eventb.core.identifier="belief_base"/>
+        <org.eventb.theory.core.operatorArgument name="(" org.eventb.core.expression="BeliefFormula(Belief_predicate_symbols, Terms)" org.eventb.core.identifier="belief_formula"/>
+        <org.eventb.theory.core.recursiveOperatorDefinition name=")" org.eventb.theory.core.inductiveArgument="belief_formula">
+            <org.eventb.theory.core.recursiveDefinitionCase name="'" org.eventb.core.expression="Belief_atom(a)" org.eventb.theory.core.formula="a ∈ belief_base"/>
+            <org.eventb.theory.core.recursiveDefinitionCase name="(" org.eventb.core.expression="Conjunctive_formula(left, right)" org.eventb.theory.core.formula="belief_entail(belief_base, left) ∧ belief_entail(belief_base, right)"/>
+            <org.eventb.theory.core.recursiveDefinitionCase name=")" org.eventb.core.expression="Disjunctive_formula(left, right)" org.eventb.theory.core.formula="belief_entail(belief_base, left) ∨ belief_entail(belief_base, right)"/>
+            <org.eventb.theory.core.recursiveDefinitionCase name="*" org.eventb.core.expression="Negated_formula(f)" org.eventb.theory.core.formula="¬ belief_entail(belief_base, f)"/>
+            <org.eventb.theory.core.recursiveDefinitionCase name="+" org.eventb.core.expression="TruthFormula" org.eventb.theory.core.formula="⊤"/>
+            <org.eventb.theory.core.recursiveDefinitionCase name="," org.eventb.core.expression="FalseFormula" org.eventb.theory.core.formula="⊥ "/>
+        </org.eventb.theory.core.recursiveOperatorDefinition>
+    </org.eventb.theory.core.newOperatorDefinition>
+</org.eventb.theory.core.theoryRoot>
