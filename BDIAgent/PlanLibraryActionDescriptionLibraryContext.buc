@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+    <org.eventb.core.extendsContext name="'" org.eventb.core.target="PredicateSymbolsContextUniversal"/>
+    <org.eventb.core.extendsContext name="(" org.eventb.core.target="TermsContextUniversal"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=")" org.eventb.core.identifier="plan_library"/>
+    <org.eventb.core.axiom name="-" org.eventb.core.label="axm1" org.eventb.core.predicate="plan_library ∈ &#10;                        (Event_predicate_symbols × Terms) ↔&#10;                        (BeliefFormula(Belief_predicate_symbols, Terms) × &#10;                         UserP(Belief_predicate_symbols, Event_predicate_symbols, Action_predicate_symbols, Terms)) "/>
+    <org.eventb.core.axiom name="." org.eventb.core.label="axm2" org.eventb.core.predicate="action_description_library ∈&#10;                         (Action_predicate_symbols × Terms)  ↔&#10;                         (BeliefFormula(Belief_predicate_symbols, Terms) ×&#10;                         ℙ(Belief_predicate_symbols × Terms) ×&#10;                         ℙ(Belief_predicate_symbols × Terms))  "/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="/" org.eventb.core.identifier="action_description_library"/>
+</org.eventb.core.contextFile>
