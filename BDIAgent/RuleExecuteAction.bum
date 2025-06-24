@@ -16,6 +16,7 @@
         <org.eventb.core.action name="2" org.eventb.core.assignment="intentions ≔ (intentions ∖ {intention}) ∪ {NilRemove(update_location_with_new_program(nextP_location, newnextP))}" org.eventb.core.comment="&#10;this is beautiful as this is only time nil is introduced after action exeuction&#10;the Nil; P -&gt; P semantics is captured by this operator" org.eventb.core.label="act2"/>
         <org.eventb.core.parameter name="5" org.eventb.core.identifier="terms"/>
         <org.eventb.core.parameter name="9" org.eventb.core.identifier="intention"/>
+        <org.eventb.core.guard name="I" org.eventb.core.label="grd8" org.eventb.core.predicate="belief_entail(belief_base, precondition)"/>
         <org.eventb.core.guard name=":" org.eventb.core.comment="&#10;add this as Rodin struggles to infer the type of newnextP &#10;when Nil constructor takes no argument " org.eventb.core.label="grd6" org.eventb.core.predicate="newnextP ∈ IntentionP(Belief_predicate_symbols, Event_predicate_symbols, Action_predicate_symbols, Terms)"/>
         <org.eventb.core.parameter name="B" org.eventb.core.identifier="nextP"/>
         <org.eventb.core.parameter name="E" org.eventb.core.identifier="nextP_location"/>
