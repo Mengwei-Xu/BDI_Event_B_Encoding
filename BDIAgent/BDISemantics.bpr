@@ -12939,4 +12939,17 @@
         <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
         <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL5:0"/>
     </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="DeclarativeGoalPersistentFailureRecovery/grd4/WD"/>
+    <org.eventb.core.prProof name="DeclarativeGoalPersistentFailureRecovery/grd6/WD"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV"/>
+    <org.eventb.core.prProof name="AddressExternalEvent/inv4/INV"/>
+    <org.eventb.core.prProof name="SelectRelevantPlans/inv4/INV"/>
+    <org.eventb.core.prProof name="SelectApplicablePlan/inv4/INV"/>
+    <org.eventb.core.prProof name="ExecuteAction/inv4/INV"/>
+    <org.eventb.core.prProof name="FailureRecovery/inv4/INV"/>
+    <org.eventb.core.prProof name="DeclarativeGoalSuccess/inv4/INV"/>
+    <org.eventb.core.prProof name="DeclarativeGoalFailure/inv4/INV"/>
+    <org.eventb.core.prProof name="DeclarativeGoalInit/inv4/INV"/>
+    <org.eventb.core.prProof name="DeclarativeGoalPersistentFailureRecovery/inv4/INV"/>
+    <org.eventb.core.prProof name="Aupdate/inv4/INV"/>
 </org.eventb.core.prFile>
