@@ -2,11 +2,11 @@
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
     <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
         <org.eventb.core.action name="'" org.eventb.core.assignment="belief_base ≔ ∅" org.eventb.core.label="act1"/>
-        <org.eventb.core.action name="(" org.eventb.core.assignment="external_events ≔ {(arrive_at↦c)} " org.eventb.core.label="act2"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="external_events ≔ {(start ↦ waste)} " org.eventb.core.label="act2"/>
         <org.eventb.core.action name=")" org.eventb.core.assignment="intentions ≔ ∅" org.eventb.core.label="act3"/>
         <org.eventb.core.action name="*" org.eventb.core.assignment="counter ≔ 0" org.eventb.core.label="act4"/>
     </org.eventb.core.event>
-    <org.eventb.core.seesContext name="(" org.eventb.core.target="BDIPrograms"/>
+    <org.eventb.core.seesContext name="(" org.eventb.core.target="BeliefBaseContextRoboticCleaning"/>
     <org.eventb.core.variable name=")" org.eventb.core.identifier="belief_base"/>
     <org.eventb.core.variable name="*" org.eventb.core.identifier="external_events"/>
     <org.eventb.core.variable name="+" org.eventb.core.identifier="intentions"/>
@@ -23,6 +23,8 @@
     </org.eventb.core.event>
     <org.eventb.core.variable name="evt2" org.eventb.core.identifier="counter"/>
     <org.eventb.core.invariant name="evt3" org.eventb.core.label="inv4" org.eventb.core.predicate="counter ∈ ℕ"/>
-    <org.eventb.core.invariant name="evt6" org.eventb.core.label="inv5" org.eventb.core.predicate="counter = 0 ⇒ (intentions = ∅ ∧ external_events = {arrive_at ↦ c}) "/>
-    <org.eventb.core.invariant name="evt4" org.eventb.core.label="inv6" org.eventb.core.predicate="counter = 1 ⇒ (external_events = ∅ ∧ intentions = {BasicP_event_intention(arrive_at ↦ c)}) "/>
+    <org.eventb.core.invariant name="evt6" org.eventb.core.label="inv5" org.eventb.core.predicate="counter = 0 ⇒ (intentions = ∅ ∧ external_events = {start ↦ waste}) "/>
+    <org.eventb.core.invariant name="evt4" org.eventb.core.label="inv6" org.eventb.core.predicate="counter = 1 ⇒ (external_events = ∅ ∧ intentions = {BasicP_event_intention(start ↦ waste)}) "/>
+    <org.eventb.core.seesContext name="evt7" org.eventb.core.target="ExternalEventsContextRoboticCleaning"/>
+    <org.eventb.core.seesContext name="evt8" org.eventb.core.target="PlanLibraryActionDescriptionLibraryContextRoboticCleaning"/>
 </org.eventb.core.machineFile>
