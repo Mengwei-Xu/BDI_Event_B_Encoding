@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
         <org.eventb.core.poIdentifier name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
         <org.eventb.core.poIdentifier name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
@@ -16,7 +16,7 @@
         <org.eventb.core.poIdentifier name="action_description_library" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
         <org.eventb.core.poIdentifier name="plan_library" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)))"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgents/PlanLibraryActionDescriptionLibraryContext.bpo|org.eventb.core.poFile#PlanLibraryActionDescriptionLibraryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgents/PlanLibraryActionDescriptionLibraryContext.bpo|org.eventb.core.poFile#PlanLibraryActionDescriptionLibraryContext|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="plan_library∈Event_predicate_symbols × Terms ↔ BeliefFormula(Belief_predicate_symbols,Terms) × UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)" org.eventb.core.source="/BDIAgents/PlanLibraryActionDescriptionLibraryContext.buc|org.eventb.core.contextFile#PlanLibraryActionDescriptionLibraryContext|org.eventb.core.axiom#-"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="action_description_library∈Action_predicate_symbols × Terms ↔ BeliefFormula(Belief_predicate_symbols,Terms) × (ℙ(Belief_predicate_symbols × Terms) × ℙ(Belief_predicate_symbols × Terms))" org.eventb.core.source="/BDIAgents/PlanLibraryActionDescriptionLibraryContext.buc|org.eventb.core.contextFile#PlanLibraryActionDescriptionLibraryContext|org.eventb.core.axiom#."/>
     </org.eventb.core.poPredicateSet>

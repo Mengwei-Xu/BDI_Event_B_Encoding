@@ -1008,6 +1008,15 @@
             <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p57" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p64" org.eventb.core.predicate="∀X⦂Terms,act2_predicate_identifier⦂Action_predicate_symbols×Terms·X∈PointTerms∧⊤∧act2_predicate_identifier=pick ↦ X⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧robot ↦ X∈dom(TwoAryVectorFunction)">
             <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
@@ -1031,6 +1040,15 @@
         <org.eventb.core.prPred name="p0" org.eventb.core.predicate="counter=0⇒Relevant_plans(clean_operation ↦ waste,plan_library[{clean_operation ↦ waste}])∈dom(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms) ◁ (id ⦂ ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)×IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))))∧IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms) ◁ (id ⦂ ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)×IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)))∈IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms) ⇸ IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.prPred name="p68" org.eventb.core.predicate="external_events∈ℙ(Event_predicate_symbols × Terms)">
             <org.eventb.core.prIdent name="external_events" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p58" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬b=waste">
             <org.eventb.core.prIdent name="b" org.eventb.core.type="Terms"/>
@@ -1065,24 +1083,6 @@
         <org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀X⦂Terms·X∈PointTerms∧⊤⇒robot ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms">
             <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p57" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p58" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p51" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P4⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P4∈Event_predicate_symbols × Terms⇒robot ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms">
@@ -1156,6 +1156,15 @@
         <org.eventb.core.prPred name="p82" org.eventb.core.predicate="∀Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms)·Y∈PointTerms∧Z∈PointTerms⇒Y ↦ Z∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧(act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)⇒robot ↦ Y∈dom(TwoAryVectorFunction)∧(precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))⇒robot ↦ Z∈dom(TwoAryVectorFunction)))">
             <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p81" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
@@ -1452,15 +1461,6 @@
             <org.eventb.core.prIdent name="plan4" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)))"/>
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
             <org.eventb.core.prIdent name="stop" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p81" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p17" org.eventb.core.predicate="¬robot=waste">
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
@@ -2098,12 +2098,6 @@
             <org.eventb.core.prIdent name="locate" org.eventb.core.type="Event_predicate_symbols"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p95" org.eventb.core.predicate="waste ↦ b∈dom(TwoAryVectorFunction)"/>
-        <org.eventb.core.prPred name="p87" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
-        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬robot=waste">
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
@@ -2112,6 +2106,12 @@
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p80" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P2⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P2=clean_operation ↦ waste⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms"/>
+        <org.eventb.core.prPred name="p62" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p7" org.eventb.core.predicate="TwoAryVectorTerms∩ThreeAryVectorTerms=(∅ ⦂ ℙ(Terms))">
             <org.eventb.core.prIdent name="ThreeAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
         </org.eventb.core.prPred>
@@ -2122,6 +2122,12 @@
             <org.eventb.core.prIdent name="plan5" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)))"/>
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p63" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p82" org.eventb.core.predicate="∀X⦂Terms,Y⦂Terms,Z⦂Terms,triggering_event_P3⦂Event_predicate_symbols×Terms,context_P3⦂BeliefFormula(Belief_predicate_symbols,Terms)·X∈PointTerms∧Y∈PointTerms∧Z∈PointTerms⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧(triggering_event_P3=collect ↦ TwoAryVectorFunction(waste ↦ X)⇒robot ↦ Y∈dom(TwoAryVectorFunction)∧Y ↦ Z∈dom(TwoAryVectorFunction)∧(context_P3=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))⇒robot ↦ Z∈dom(TwoAryVectorFunction)))">
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
@@ -2129,18 +2135,6 @@
         <org.eventb.core.prPred name="p33" org.eventb.core.predicate="¬move=pick">
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
             <org.eventb.core.prIdent name="pick" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p62" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p63" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p97" org.eventb.core.predicate="∀triggering_event_P1⦂Event_predicate_symbols×Terms,context_P1⦂BeliefFormula(Belief_predicate_symbols,Terms)·¬(triggering_event_P1=start ↦ waste∧context_P1=(TruthFormula ⦂ BeliefFormula(Belief_predicate_symbols,Terms)))"/>
         <org.eventb.core.prPred name="p56" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P4⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P4∈Event_predicate_symbols × Terms⇒robot ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms">
@@ -2173,6 +2167,12 @@
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p98" org.eventb.core.predicate="∀triggering_event_P1⦂Event_predicate_symbols×Terms,context_P1⦂BeliefFormula(Belief_predicate_symbols,Terms)·¬triggering_event_P1=start ↦ waste∨¬context_P1=(TruthFormula ⦂ BeliefFormula(Belief_predicate_symbols,Terms))"/>
+        <org.eventb.core.prPred name="p87" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p81" org.eventb.core.predicate="plan3={X⦂Terms,Y⦂Terms,Z⦂Terms,triggering_event_P3⦂Event_predicate_symbols×Terms,context_P3⦂BeliefFormula(Belief_predicate_symbols,Terms),plan_body_P3⦂UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)·X∈PointTerms∧Y∈PointTerms∧Z∈PointTerms∧triggering_event_P3=collect ↦ TwoAryVectorFunction(waste ↦ X)∧context_P3=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧plan_body_P3=Sequence_user(BasicP_event_user(locate ↦ TwoAryVectorFunction(robot ↦ Z)),BasicP_action_user(pick ↦ X)) ∣ triggering_event_P3 ↦ (context_P3 ↦ plan_body_P3)}">
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="locate" org.eventb.core.type="Event_predicate_symbols"/>
@@ -3818,6 +3818,14 @@
         <org.eventb.core.prPred name="p70" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P2⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P2=clean_operation ↦ waste⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms">
             <org.eventb.core.prIdent name="clean_operation" org.eventb.core.type="Event_predicate_symbols"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p57" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p64" org.eventb.core.predicate="∀X⦂Terms,act2_predicate_identifier⦂Action_predicate_symbols×Terms·X∈PointTerms∧⊤∧act2_predicate_identifier=pick ↦ X⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧robot ↦ X∈dom(TwoAryVectorFunction)">
             <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
             <org.eventb.core.prIdent name="pick" org.eventb.core.type="Action_predicate_symbols"/>
@@ -3833,6 +3841,14 @@
             <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
             <org.eventb.core.prIdent name="plan5" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)))"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p58" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬b=waste"/>
@@ -3861,22 +3877,6 @@
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p14" org.eventb.core.predicate="¬b=c"/>
         <org.eventb.core.prPred name="p52" org.eventb.core.predicate="∀X⦂Terms·X∈PointTerms∧⊤⇒robot ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms">
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p57" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p58" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p84" org.eventb.core.predicate="∀triggering_event_P1⦂Event_predicate_symbols×Terms,context_P1⦂BeliefFormula(Belief_predicate_symbols,Terms)·¬(triggering_event_P1=start ↦ waste∧context_P1=(TruthFormula ⦂ BeliefFormula(Belief_predicate_symbols,Terms)))"/>
@@ -3944,6 +3944,14 @@
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p85" org.eventb.core.predicate="∀triggering_event_P1⦂Event_predicate_symbols×Terms,context_P1⦂BeliefFormula(Belief_predicate_symbols,Terms)·¬triggering_event_P1=start ↦ waste∨¬context_P1=(TruthFormula ⦂ BeliefFormula(Belief_predicate_symbols,Terms))"/>
+        <org.eventb.core.prPred name="p77" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p71" org.eventb.core.predicate="plan3={X⦂Terms,Y⦂Terms,Z⦂Terms,triggering_event_P3⦂Event_predicate_symbols×Terms,context_P3⦂BeliefFormula(Belief_predicate_symbols,Terms),plan_body_P3⦂UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)·X∈PointTerms∧Y∈PointTerms∧Z∈PointTerms∧triggering_event_P3=collect ↦ TwoAryVectorFunction(waste ↦ X)∧context_P3=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧plan_body_P3=Sequence_user(BasicP_event_user(locate ↦ TwoAryVectorFunction(robot ↦ Z)),BasicP_action_user(pick ↦ X)) ∣ triggering_event_P3 ↦ (context_P3 ↦ plan_body_P3)}">
             <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
@@ -4178,14 +4186,6 @@
             <org.eventb.core.prIdent name="stop" org.eventb.core.type="Action_predicate_symbols"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="TwoAryVectorFunction∈PointTerms × PointTerms ↣ TwoAryVectorTerms"/>
-        <org.eventb.core.prPred name="p77" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-            <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
-        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p19" org.eventb.core.predicate="¬robot=waste">
             <org.eventb.core.prIdent name="robot" org.eventb.core.type="Terms"/>
         </org.eventb.core.prPred>
@@ -4914,15 +4914,6 @@
         <org.eventb.core.prPred name="p95" org.eventb.core.predicate="{a,b,c,robot,waste}∩TwoAryVectorTerms=(∅ ⦂ ℙ(Terms))">
             <org.eventb.core.prIdent name="TwoAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p88" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p16" org.eventb.core.predicate="¬robot=waste"/>
         <org.eventb.core.prPred name="p22" org.eventb.core.predicate="¬start=clean_operation">
             <org.eventb.core.prIdent name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
@@ -4934,6 +4925,15 @@
             <org.eventb.core.prIdent name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
             <org.eventb.core.prIdent name="clean_operation" org.eventb.core.type="Event_predicate_symbols"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p63" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p5" org.eventb.core.predicate="TwoAryVectorTerms∩ThreeAryVectorTerms=(∅ ⦂ ℙ(Terms))">
             <org.eventb.core.prIdent name="ThreeAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
@@ -4950,6 +4950,15 @@
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
             <org.eventb.core.prIdent name="plan5" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)))"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p64" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p83" org.eventb.core.predicate="∀X⦂Terms,Y⦂Terms,Z⦂Terms,triggering_event_P3⦂Event_predicate_symbols×Terms,context_P3⦂BeliefFormula(Belief_predicate_symbols,Terms)·X∈PointTerms∧Y∈PointTerms∧Z∈PointTerms⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧(triggering_event_P3=collect ↦ TwoAryVectorFunction(waste ↦ X)⇒robot ↦ Y∈dom(TwoAryVectorFunction)∧Y ↦ Z∈dom(TwoAryVectorFunction)∧(context_P3=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))⇒robot ↦ Z∈dom(TwoAryVectorFunction)))">
             <org.eventb.core.prIdent name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
             <org.eventb.core.prIdent name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
@@ -4962,24 +4971,6 @@
             <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
             <org.eventb.core.prIdent name="pick" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p63" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p64" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p57" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P4⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P4∈Event_predicate_symbols × Terms⇒robot ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms">
             <org.eventb.core.prIdent name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
@@ -5025,6 +5016,15 @@
             <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
             <org.eventb.core.prIdent name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p88" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
@@ -6618,13 +6618,6 @@
         <org.eventb.core.prPred name="p104" org.eventb.core.predicate="{a,b,c,robot,waste}∩TwoAryVectorTerms=(∅ ⦂ ℙ(Terms))">
             <org.eventb.core.prIdent name="TwoAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p92" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p110" org.eventb.core.predicate="nextP ↦ nextP_location∈next_programs_to_progress(Relevant_plans(clean_operation ↦ waste,plan_library[{clean_operation ↦ waste}]),belief_base,Root ⦂ ProgramLocation(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))">
             <org.eventb.core.prIdent name="belief_base" org.eventb.core.type="ℙ(Belief_predicate_symbols×Terms)"/>
         </org.eventb.core.prPred>
@@ -6635,6 +6628,13 @@
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="partition(PointTerms,{a},{b},{c},{robot},{waste})"/>
         <org.eventb.core.prPred name="p85" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P2⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P2=clean_operation ↦ waste⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms">
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p67" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p9" org.eventb.core.predicate="TwoAryVectorTerms∩ThreeAryVectorTerms=(∅ ⦂ ℙ(Terms))">
             <org.eventb.core.prIdent name="ThreeAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
@@ -6648,6 +6648,13 @@
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
             <org.eventb.core.prIdent name="plan5" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×UserP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)))"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p68" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p87" org.eventb.core.predicate="∀X⦂Terms,Y⦂Terms,Z⦂Terms,triggering_event_P3⦂Event_predicate_symbols×Terms,context_P3⦂BeliefFormula(Belief_predicate_symbols,Terms)·X∈PointTerms∧Y∈PointTerms∧Z∈PointTerms⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧(triggering_event_P3=collect ↦ TwoAryVectorFunction(waste ↦ X)⇒robot ↦ Y∈dom(TwoAryVectorFunction)∧Y ↦ Z∈dom(TwoAryVectorFunction)∧(context_P3=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))⇒robot ↦ Z∈dom(TwoAryVectorFunction)))">
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
@@ -6659,20 +6666,6 @@
             <org.eventb.core.prIdent name="pick" org.eventb.core.type="Action_predicate_symbols"/>
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p4" org.eventb.core.predicate="intention∈intentions"/>
-        <org.eventb.core.prPred name="p67" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p68" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p61" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P4⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P4∈Event_predicate_symbols × Terms⇒robot ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms">
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
         </org.eventb.core.prPred>
@@ -6705,6 +6698,13 @@
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p93" org.eventb.core.predicate="∀Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms)·Y∈PointTerms∧Z∈PointTerms⇒Y ↦ Z∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧(act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)⇒robot ↦ Y∈dom(TwoAryVectorFunction)∧(precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))⇒robot ↦ Z∈dom(TwoAryVectorFunction)))">
             <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p92" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="location" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
@@ -7592,11 +7592,6 @@
         <org.eventb.core.prPred name="p127" org.eventb.core.predicate="{a,b,c,robot,waste}∩TwoAryVectorTerms=(∅ ⦂ ℙ(Terms))">
             <org.eventb.core.prIdent name="TwoAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
         </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p92" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p24" org.eventb.core.predicate="¬robot=waste"/>
         <org.eventb.core.prPred name="p122" org.eventb.core.predicate="waste ↦ a∈dom(TwoAryVectorFunction)∧waste ↦ c∈dom(TwoAryVectorFunction)"/>
         <org.eventb.core.prPred name="p30" org.eventb.core.predicate="¬start=clean_operation"/>
@@ -7604,6 +7599,11 @@
         <org.eventb.core.prPred name="p2" org.eventb.core.predicate="partition(PointTerms,{a},{b},{c},{robot},{waste})"/>
         <org.eventb.core.prPred name="p85" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P2⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P2=clean_operation ↦ waste⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms"/>
         <org.eventb.core.prPred name="p135" org.eventb.core.predicate="intention∈{Try_current_with_backups(BasicP_event_intention(collect ↦ TwoAryVectorFunction(waste ↦ b)),Relevant_plans(clean_operation ↦ waste,plan_library[{clean_operation ↦ waste}] ∖ {Belief_atom(location ↦ TwoAryVectorFunction(waste ↦ b)) ↦ BasicP_event_user(collect ↦ TwoAryVectorFunction(waste ↦ b))}))}"/>
+        <org.eventb.core.prPred name="p68" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p13" org.eventb.core.predicate="TwoAryVectorTerms∩ThreeAryVectorTerms=(∅ ⦂ ℙ(Terms))">
             <org.eventb.core.prIdent name="ThreeAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
             <org.eventb.core.prIdent name="TwoAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
@@ -7618,6 +7618,11 @@
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
         </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p69" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p87" org.eventb.core.predicate="∀X⦂Terms,Y⦂Terms,Z⦂Terms,triggering_event_P3⦂Event_predicate_symbols×Terms,context_P3⦂BeliefFormula(Belief_predicate_symbols,Terms)·X∈PointTerms∧Y∈PointTerms∧Z∈PointTerms⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧(triggering_event_P3=collect ↦ TwoAryVectorFunction(waste ↦ X)⇒robot ↦ Y∈dom(TwoAryVectorFunction)∧Y ↦ Z∈dom(TwoAryVectorFunction)∧(context_P3=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))⇒robot ↦ Z∈dom(TwoAryVectorFunction)))">
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
         </org.eventb.core.prPred>
@@ -7626,16 +7631,6 @@
         </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p118" org.eventb.core.predicate="∀X⦂Terms,act2_predicate_identifier⦂Action_predicate_symbols×Terms·X∈PointTerms∧act2_predicate_identifier=pick ↦ X⇒waste ↦ X∈dom(TwoAryVectorFunction)∧robot ↦ X∈dom(TwoAryVectorFunction)"/>
         <org.eventb.core.prPred name="p7" org.eventb.core.predicate="intention∈intentions"/>
-        <org.eventb.core.prPred name="p68" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier∈Action_predicate_symbols × Terms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
-        <org.eventb.core.prPred name="p69" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧⊤∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
-            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
-            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
-            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
-        </org.eventb.core.prPred>
         <org.eventb.core.prPred name="p62" org.eventb.core.predicate="∀X⦂Terms,triggering_event_P4⦂Event_predicate_symbols×Terms·X∈PointTerms∧triggering_event_P4∈Event_predicate_symbols × Terms⇒robot ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms"/>
         <org.eventb.core.prPred name="p49" org.eventb.core.predicate="action_description_library∈Action_predicate_symbols × Terms ↔ BeliefFormula(Belief_predicate_symbols,Terms) × (ℙ(Belief_predicate_symbols × Terms) × ℙ(Belief_predicate_symbols × Terms))">
             <org.eventb.core.prIdent name="action_description_library" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
@@ -7656,6 +7651,11 @@
         <org.eventb.core.prPred name="p95" org.eventb.core.predicate="∀X⦂Terms,act2_predicate_identifier⦂Action_predicate_symbols×Terms·X∈PointTerms∧act2_predicate_identifier=pick ↦ X⇒waste ↦ X∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧robot ↦ X∈dom(TwoAryVectorFunction)"/>
         <org.eventb.core.prPred name="p1" org.eventb.core.predicate="counter=1⇒waste ↦ b∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧Try_current_with_backups(BasicP_event_intention(collect ↦ TwoAryVectorFunction(waste ↦ b)),Relevant_plans(clean_operation ↦ waste,plan_library[{clean_operation ↦ waste}] ∖ {Belief_atom(location ↦ TwoAryVectorFunction(waste ↦ b)) ↦ BasicP_event_user(collect ↦ TwoAryVectorFunction(waste ↦ b))}))∈dom(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms) ◁ (id ⦂ ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)×IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms))))∧IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms) ◁ (id ⦂ ℙ(IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)×IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)))∈IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms) ⇸ IntentionP(Belief_predicate_symbols,Event_predicate_symbols,Action_predicate_symbols,Terms)"/>
         <org.eventb.core.prPred name="p93" org.eventb.core.predicate="∀Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms)·Y∈PointTerms∧Z∈PointTerms⇒Y ↦ Z∈dom(TwoAryVectorFunction)∧TwoAryVectorFunction∈Terms × Terms ⇸ Terms∧(act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)⇒robot ↦ Y∈dom(TwoAryVectorFunction)∧(precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))⇒robot ↦ Z∈dom(TwoAryVectorFunction)))">
+            <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+            <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p92" org.eventb.core.predicate="act1={Y⦂Terms,Z⦂Terms,act1_predicate_identifier⦂Action_predicate_symbols×Terms,precondition_act1⦂BeliefFormula(Belief_predicate_symbols,Terms),addition_set_act1⦂ℙ(Belief_predicate_symbols×Terms),deletion_set_act1⦂ℙ(Belief_predicate_symbols×Terms)·Y∈PointTerms∧Z∈PointTerms∧act1_predicate_identifier=move ↦ TwoAryVectorFunction(Y ↦ Z)∧precondition_act1=Conjunctive_formula(Belief_atom(location ↦ TwoAryVectorFunction(robot ↦ Y)),Belief_atom(adjacent ↦ TwoAryVectorFunction(Y ↦ Z)))∧addition_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Z)}∧deletion_set_act1={location ↦ TwoAryVectorFunction(robot ↦ Y)} ∣ act1_predicate_identifier ↦ (precondition_act1 ↦ (addition_set_act1 ↦ deletion_set_act1))}">
+            <org.eventb.core.prIdent name="act1" org.eventb.core.type="ℙ(Action_predicate_symbols×Terms×(BeliefFormula(Belief_predicate_symbols,Terms)×(ℙ(Belief_predicate_symbols×Terms)×ℙ(Belief_predicate_symbols×Terms))))"/>
             <org.eventb.core.prIdent name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
             <org.eventb.core.prIdent name="move" org.eventb.core.type="Action_predicate_symbols"/>
         </org.eventb.core.prPred>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
         <org.eventb.core.poIdentifier name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
         <org.eventb.core.poIdentifier name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
@@ -33,7 +33,7 @@
         <org.eventb.core.poPredicate name="Belief_predicate_symbolz" org.eventb.core.predicate="partition(PointTerms,{a},{b},{c},{robot},{waste})" org.eventb.core.source="/BDIAgents/TermsContextRoboticCleaning.buc|org.eventb.core.contextFile#TermsContextRoboticCleaning|org.eventb.core.axiom#("/>
         <org.eventb.core.poIdentifier name="Initial_external_events" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms)"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgents/ExternalEventsContextRoboticCleaning.bpo|org.eventb.core.poFile#ExternalEventsContextRoboticCleaning|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgents/ExternalEventsContextRoboticCleaning.bpo|org.eventb.core.poFile#ExternalEventsContextRoboticCleaning|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Initial_external_events∈ℙ(Event_predicate_symbols × Terms)" org.eventb.core.source="/BDIAgents/ExternalEventsContextRoboticCleaning.buc|org.eventb.core.contextFile#ExternalEventsContextRoboticCleaning|org.eventb.core.axiom#*"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="Initial_external_events={start ↦ waste}" org.eventb.core.source="/BDIAgents/ExternalEventsContextRoboticCleaning.buc|org.eventb.core.contextFile#ExternalEventsContextRoboticCleaning|org.eventb.core.axiom#+"/>
     </org.eventb.core.poPredicateSet>

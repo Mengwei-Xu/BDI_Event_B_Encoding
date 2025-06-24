@@ -3,7 +3,7 @@
     <org.eventb.core.event name="evt1" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
         <org.eventb.core.action name="'" org.eventb.core.assignment="belief_base ≔ ∅" org.eventb.core.label="act1"/>
         <org.eventb.core.action name="(" org.eventb.core.assignment="external_events ≔ ∅ " org.eventb.core.label="act2"/>
-        <org.eventb.core.action name=")" org.eventb.core.assignment="intentions ≔ {BasicP_event_intention(start ↦ waste)} " org.eventb.core.label="act3"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="intentions ≔ {BasicP_event_intention(start ↦ waste)}  " org.eventb.core.label="act3"/>
         <org.eventb.core.action name="*" org.eventb.core.assignment="counter ≔ 0" org.eventb.core.label="act4"/>
     </org.eventb.core.event>
     <org.eventb.core.event name="evt2" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="SelectRelevantPlans">

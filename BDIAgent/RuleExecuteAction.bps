@@ -10,7 +10,7 @@
     <org.eventb.core.psStatus name="INITIALISATION/act1/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="INITIALISATION/act2/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
     <org.eventb.core.psStatus name="ExecuteAction/grd4/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="8" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ExecuteAction/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ExecuteAction/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
-    <org.eventb.core.psStatus name="ExecuteAction/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ExecuteAction/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ExecuteAction/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psManual="false"/>
+    <org.eventb.core.psStatus name="ExecuteAction/inv6/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="9" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>
