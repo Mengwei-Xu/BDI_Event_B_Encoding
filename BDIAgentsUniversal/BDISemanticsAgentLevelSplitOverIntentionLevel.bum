@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
+    <org.eventb.core.refinesMachine name="'" org.eventb.core.target="BDISemanticsAgentLevel"/>
+    <org.eventb.core.seesContext name="element1" org.eventb.core.target="BeliefBaseContextUniversal"/>
+    <org.eventb.core.seesContext name="element2" org.eventb.core.target="ExternalEventsContextUniversal"/>
+    <org.eventb.core.seesContext name="element3" org.eventb.core.target="PlanLibraryActionDescriptionLibraryContextUniversal"/>
+    <org.eventb.core.variable name="var1" org.eventb.core.identifier="belief_base"/>
+    <org.eventb.core.variable name="var2" org.eventb.core.identifier="external_events"/>
+    <org.eventb.core.variable name="var3" org.eventb.core.identifier="intentions"/>
+    <org.eventb.core.event name="element4" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.event name="element5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Aevent">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Aevent"/>
+        <org.eventb.core.guard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="event ↦ terms ∈ external_events"/>
+        <org.eventb.core.parameter name="(" org.eventb.core.identifier="event"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="intentions ≔ intentions ∪ {BasicP_event_intention(event ↦ terms)}" org.eventb.core.comment="Add the external event as an event type in the intention" org.eventb.core.label="act1"/>
+        <org.eventb.core.parameter name="+" org.eventb.core.identifier="terms"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="external_events ≔ external_events ∖ {(event ↦ terms)} " org.eventb.core.label="act2"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="element6" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="Aupdate">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Aupdate"/>
+        <org.eventb.core.parameter name="'" org.eventb.core.identifier="intention"/>
+        <org.eventb.core.guard name=")" org.eventb.core.label="grd1" org.eventb.core.predicate="intention ∈ intentions"/>
+        <org.eventb.core.guard name="*" org.eventb.core.label="grd2" org.eventb.core.predicate="AStepPossible(intention,belief_base,action_description_library,plan_library )=∅"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="intentions ≔ (intentions ∖ {intention})" org.eventb.core.label="act1"/>
+    </org.eventb.core.event>
+    <org.eventb.core.event name="element7" org.eventb.core.convergence="0" org.eventb.core.extended="true" org.eventb.core.label="Astep">
+        <org.eventb.core.refinesEvent name="'" org.eventb.core.target="Astep"/>
+    </org.eventb.core.event>
+</org.eventb.core.machineFile>

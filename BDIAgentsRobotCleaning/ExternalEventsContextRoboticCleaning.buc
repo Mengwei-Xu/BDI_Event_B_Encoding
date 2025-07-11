@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+    <org.eventb.core.extendsContext name="'" org.eventb.core.target="PredicateSymbolsContextRoboticCleaning"/>
+    <org.eventb.core.extendsContext name="(" org.eventb.core.target="TermsContextRoboticCleaning"/>
+    <org.eventb.core.axiom name="+" org.eventb.core.label="axm2" org.eventb.core.predicate="Initial_external_events = {start ↦ waste}"/>
+    <org.eventb.core.extendsContext name="," org.eventb.core.target="ExternalEventsContextUniversal"/>
+</org.eventb.core.contextFile>

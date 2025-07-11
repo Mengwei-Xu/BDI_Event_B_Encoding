@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+    <org.eventb.core.extendsContext name="'" org.eventb.core.target="TermsContextRoboticCleaning"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="(" org.eventb.core.identifier="ab"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=")" org.eventb.core.identifier="ac"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="*" org.eventb.core.identifier="ba"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="+" org.eventb.core.identifier="bc"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="," org.eventb.core.identifier="ca"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="-" org.eventb.core.identifier="cb"/>
+    <org.eventb.core.axiom name="/" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(TwoAryVectorTerms,{ab},{ac},{ba},{bc},{ca},{cb},{Wa},{Wb},{Wc},{Ra},{Rb},{Rc})"/>
+    <org.eventb.core.axiom name="." org.eventb.core.label="axm1" org.eventb.core.predicate="TwoAryVectorFunction={a↦b↦ab,a↦c↦ac,b↦a↦ba,b↦c↦bc,c↦a↦ca,c↦b↦cb,&#10;&#9;&#9;&#9;&#9;waste↦a↦Wa,waste↦b↦Wb,waste↦c↦Wc,&#10;&#9;&#9;&#9;&#9;robot↦a↦Ra,robot↦b↦Rb,robot↦c↦Rc}"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="0" org.eventb.core.identifier="Wa"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="5" org.eventb.core.identifier="Wb"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="4" org.eventb.core.identifier="Wc"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="3" org.eventb.core.identifier="Ra"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="2" org.eventb.core.identifier="Rb"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="1" org.eventb.core.identifier="Rc"/>
+</org.eventb.core.contextFile>

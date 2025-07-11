@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Terms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="ThreeAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms×Terms)"/>
+        <org.eventb.core.poIdentifier name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+        <org.eventb.core.poIdentifier name="ThreeAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="TwoAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolt" org.eventb.core.predicate="partition(Terms,PointTerms,TwoAryVectorTerms,ThreeAryVectorTerms)" org.eventb.core.source="/BDIAgentsUniversal/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolu" org.eventb.core.predicate="TwoAryVectorFunction∈PointTerms × PointTerms ⤔ TwoAryVectorTerms" org.eventb.core.source="/BDIAgentsUniversal/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#."/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolv" org.eventb.core.predicate="ThreeAryVectorFunction∈PointTerms × PointTerms × PointTerms ⤔ ThreeAryVectorTerms" org.eventb.core.source="/BDIAgentsUniversal/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poIdentifier name="Initial_external_events" org.eventb.core.type="ℙ(Event_predicate_symbols×Terms)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgentsUniversal/ExternalEventsContextUniversal.bpo|org.eventb.core.poFile#ExternalEventsContextUniversal|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="Initial_external_events∈ℙ(Event_predicate_symbols × Terms)" org.eventb.core.source="/BDIAgentsUniversal/ExternalEventsContextUniversal.buc|org.eventb.core.contextFile#ExternalEventsContextUniversal|org.eventb.core.axiom#*"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

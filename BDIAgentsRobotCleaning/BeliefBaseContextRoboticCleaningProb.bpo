@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Terms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="ThreeAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms×Terms)"/>
+        <org.eventb.core.poIdentifier name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+        <org.eventb.core.poIdentifier name="ThreeAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="TwoAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poPredicate name="ThreeAryVectorFunctioo" org.eventb.core.predicate="partition(Terms,PointTerms,TwoAryVectorTerms,ThreeAryVectorTerms)" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="ThreeAryVectorFunctiop" org.eventb.core.predicate="TwoAryVectorFunction∈PointTerms × PointTerms ⤔ TwoAryVectorTerms" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#."/>
+        <org.eventb.core.poPredicate name="ThreeAryVectorFunctioq" org.eventb.core.predicate="ThreeAryVectorFunction∈PointTerms × PointTerms × PointTerms ⤔ ThreeAryVectorTerms" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="c" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="robot" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="waste" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poPredicate name="ThreeAryVectorFunctior" org.eventb.core.predicate="partition(PointTerms,{a},{b},{c},{robot},{waste})" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextRoboticCleaning.buc|org.eventb.core.contextFile#TermsContextRoboticCleaning|org.eventb.core.axiom#("/>
+        <org.eventb.core.poIdentifier name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="pick" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="stop" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="collect" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="locate" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="start" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="clean_operation" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolt" org.eventb.core.predicate="partition(Belief_predicate_symbols,{location},{adjacent})" org.eventb.core.source="/BDIAgentsRobotCleaning/PredicateSymbolsContextRoboticCleaning.buc|org.eventb.core.contextFile#PredicateSymbolsContextRoboticCleaning|org.eventb.core.axiom#1"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolu" org.eventb.core.predicate="partition(Event_predicate_symbols,{start},{clean_operation},{collect},{locate})" org.eventb.core.source="/BDIAgentsRobotCleaning/PredicateSymbolsContextRoboticCleaning.buc|org.eventb.core.contextFile#PredicateSymbolsContextRoboticCleaning|org.eventb.core.axiom#2"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolv" org.eventb.core.predicate="partition(Action_predicate_symbols,{move},{pick},{stop})" org.eventb.core.source="/BDIAgentsRobotCleaning/PredicateSymbolsContextRoboticCleaning.buc|org.eventb.core.contextFile#PredicateSymbolsContextRoboticCleaning|org.eventb.core.axiom#3"/>
+        <org.eventb.core.poIdentifier name="Initial_belief_base" org.eventb.core.type="ℙ(Belief_predicate_symbols×Terms)"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolw" org.eventb.core.predicate="Initial_belief_base∈ℙ(Belief_predicate_symbols × Terms)" org.eventb.core.source="/BDIAgentsRobotCleaning/BeliefBaseContextUniversal.buc|org.eventb.core.contextFile#BeliefBaseContextUniversal|org.eventb.core.axiom#+"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolx" org.eventb.core.predicate="Initial_belief_base={adjacent ↦ TwoAryVectorFunction(a ↦ b),adjacent ↦ TwoAryVectorFunction(b ↦ c),location ↦ TwoAryVectorFunction(robot ↦ a),location ↦ TwoAryVectorFunction(waste ↦ b)}" org.eventb.core.source="/BDIAgentsRobotCleaning/BeliefBaseContextRoboticCleaning.buc|org.eventb.core.contextFile#BeliefBaseContextRoboticCleaning|org.eventb.core.axiom#*"/>
+        <org.eventb.core.poIdentifier name="Ra" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Rb" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Rc" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Wa" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Wb" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Wc" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="ab" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="ac" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="ba" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="bc" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="ca" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="cb" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symboly" org.eventb.core.predicate="partition(TwoAryVectorTerms,{ab},{ac},{ba},{bc},{ca},{cb},{Wa},{Wb},{Wc},{Ra},{Rb},{Rc})" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextRoboticCleaningProb.buc|org.eventb.core.contextFile#TermsContextRoboticCleaningProb|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poPredicate name="Belief_predicate_symbolz" org.eventb.core.predicate="TwoAryVectorFunction={a ↦ b ↦ ab,a ↦ c ↦ ac,b ↦ a ↦ ba,b ↦ c ↦ bc,c ↦ a ↦ ca,c ↦ b ↦ cb,waste ↦ a ↦ Wa,waste ↦ b ↦ Wb,waste ↦ c ↦ Wc,robot ↦ a ↦ Ra,robot ↦ b ↦ Rb,robot ↦ c ↦ Rc}" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextRoboticCleaningProb.buc|org.eventb.core.contextFile#TermsContextRoboticCleaningProb|org.eventb.core.axiom#."/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgentsRobotCleaning/BeliefBaseContextRoboticCleaningProb.bpo|org.eventb.core.poFile#BeliefBaseContextRoboticCleaningProb|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+</org.eventb.core.poFile>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd;de.prob.symbolic.ctxBase" version="3">
+    <org.eventb.core.extendsContext name="'" org.eventb.core.target="PredicateSymbolsContextUniversal"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="(" org.eventb.core.identifier="location"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name=")" org.eventb.core.identifier="adjacent"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="*" org.eventb.core.identifier="start"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="+" org.eventb.core.identifier="clean_operation"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="," org.eventb.core.identifier="collect"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="-" org.eventb.core.identifier="locate"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="." org.eventb.core.identifier="move"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="/" org.eventb.core.identifier="pick"/>
+    <org.eventb.core.constant de.prob.symbolic.symbolicAttribute="false" name="0" org.eventb.core.identifier="stop"/>
+    <org.eventb.core.axiom name="1" org.eventb.core.label="axm1" org.eventb.core.predicate="partition(Belief_predicate_symbols, {location}, {adjacent})"/>
+    <org.eventb.core.axiom name="2" org.eventb.core.label="axm2" org.eventb.core.predicate="partition(Event_predicate_symbols, {start}, {clean_operation},{collect}, {locate})"/>
+    <org.eventb.core.axiom name="3" org.eventb.core.label="axm3" org.eventb.core.predicate="partition(Action_predicate_symbols, {move}, {pick},{stop})"/>
+</org.eventb.core.contextFile>

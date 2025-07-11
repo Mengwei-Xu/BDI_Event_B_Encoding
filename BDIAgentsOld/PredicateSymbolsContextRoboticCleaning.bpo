@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Belief_predicate_symbols" org.eventb.core.type="ℙ(Belief_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Action_predicate_symbols" org.eventb.core.type="ℙ(Action_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="Event_predicate_symbols" org.eventb.core.type="ℙ(Event_predicate_symbols)"/>
+        <org.eventb.core.poIdentifier name="pick" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="stop" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="collect" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="locate" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="adjacent" org.eventb.core.type="Belief_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="start" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="move" org.eventb.core.type="Action_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="clean_operation" org.eventb.core.type="Event_predicate_symbols"/>
+        <org.eventb.core.poIdentifier name="location" org.eventb.core.type="Belief_predicate_symbols"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgentsOld/PredicateSymbolsContextRoboticCleaning.bpo|org.eventb.core.poFile#PredicateSymbolsContextRoboticCleaning|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(Belief_predicate_symbols,{location},{adjacent})" org.eventb.core.source="/BDIAgentsOld/PredicateSymbolsContextRoboticCleaning.buc|org.eventb.core.contextFile#PredicateSymbolsContextRoboticCleaning|org.eventb.core.axiom#1"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="partition(Event_predicate_symbols,{start},{clean_operation},{collect},{locate})" org.eventb.core.source="/BDIAgentsOld/PredicateSymbolsContextRoboticCleaning.buc|org.eventb.core.contextFile#PredicateSymbolsContextRoboticCleaning|org.eventb.core.axiom#2"/>
+        <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="partition(Action_predicate_symbols,{move},{pick},{stop})" org.eventb.core.source="/BDIAgentsOld/PredicateSymbolsContextRoboticCleaning.buc|org.eventb.core.contextFile#PredicateSymbolsContextRoboticCleaning|org.eventb.core.axiom#3"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

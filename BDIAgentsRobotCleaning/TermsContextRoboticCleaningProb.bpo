@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="Terms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="ThreeAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms×Terms)"/>
+        <org.eventb.core.poIdentifier name="PointTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="TwoAryVectorFunction" org.eventb.core.type="ℙ(Terms×Terms×Terms)"/>
+        <org.eventb.core.poIdentifier name="ThreeAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poIdentifier name="TwoAryVectorTerms" org.eventb.core.type="ℙ(Terms)"/>
+        <org.eventb.core.poPredicate name="ThreeAryVectorFunctioo" org.eventb.core.predicate="partition(Terms,PointTerms,TwoAryVectorTerms,ThreeAryVectorTerms)" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#-"/>
+        <org.eventb.core.poPredicate name="ThreeAryVectorFunctiop" org.eventb.core.predicate="TwoAryVectorFunction∈PointTerms × PointTerms ⤔ TwoAryVectorTerms" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#."/>
+        <org.eventb.core.poPredicate name="ThreeAryVectorFunctioq" org.eventb.core.predicate="ThreeAryVectorFunction∈PointTerms × PointTerms × PointTerms ⤔ ThreeAryVectorTerms" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextUniversal.buc|org.eventb.core.contextFile#TermsContextUniversal|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poIdentifier name="a" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="b" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="c" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="robot" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="waste" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poPredicate name="ThreeAryVectorFunctior" org.eventb.core.predicate="partition(PointTerms,{a},{b},{c},{robot},{waste})" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextRoboticCleaning.buc|org.eventb.core.contextFile#TermsContextRoboticCleaning|org.eventb.core.axiom#("/>
+        <org.eventb.core.poIdentifier name="Ra" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Rb" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Rc" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Wa" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Wb" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="Wc" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="ab" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="ac" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="ba" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="bc" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="ca" org.eventb.core.type="Terms"/>
+        <org.eventb.core.poIdentifier name="cb" org.eventb.core.type="Terms"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/BDIAgentsRobotCleaning/TermsContextRoboticCleaningProb.bpo|org.eventb.core.poFile#TermsContextRoboticCleaningProb|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="partition(TwoAryVectorTerms,{ab},{ac},{ba},{bc},{ca},{cb},{Wa},{Wb},{Wc},{Ra},{Rb},{Rc})" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextRoboticCleaningProb.buc|org.eventb.core.contextFile#TermsContextRoboticCleaningProb|org.eventb.core.axiom#\/"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="TwoAryVectorFunction={a ↦ b ↦ ab,a ↦ c ↦ ac,b ↦ a ↦ ba,b ↦ c ↦ bc,c ↦ a ↦ ca,c ↦ b ↦ cb,waste ↦ a ↦ Wa,waste ↦ b ↦ Wb,waste ↦ c ↦ Wc,robot ↦ a ↦ Ra,robot ↦ b ↦ Rb,robot ↦ c ↦ Rc}" org.eventb.core.source="/BDIAgentsRobotCleaning/TermsContextRoboticCleaningProb.buc|org.eventb.core.contextFile#TermsContextRoboticCleaningProb|org.eventb.core.axiom#."/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
